@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Average score in all students -> {{ avg }}</h1>
+        {% for i in passed %}
+            <h2 style="color: lime;">{{ i[0] }} passed their course with a score of {{ i[1] }}</h2>
+        {% endfor %}
+        {% for i in failed %}
+            <h2 style="color: red;">{{ i[0] }} failed their course with a score of {{ i[1] }}</h2>
+        {% endfor %}
+    </body>
+</html>
